@@ -50,8 +50,8 @@ export default function BasisFlatList() {
           renderItem={({ item, index }) => {
             return (
               <View style={styles.container}>
-                <View style={{width:'20%'}}>
-                  <Image></Image>
+                <View style={{width:'20%',height:'100%'}}>
+                  <Image source={{uri:item.photo}} style={{height:80,width:80}}></Image>
                 </View>
                 <View style={{width: "50%", paddingVertical: 20,paddingHorizontal:5 }}>
                   <Text style={{}}>{item.email}</Text>
